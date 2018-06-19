@@ -1,0 +1,244 @@
+main
+	&:before, &:after
+		content: ''
+		display: table
+		width: 100%
+		clear: both
+.home-title
+	+fs(30rem)
+	color $main
+	margin-bottom: 30px
+	+media-breakpoint-down(xs)
+		+fs(24rem)
+		margin-bottom: 20px
+.home-des
+	+fs(16rem)
+	font-weight: 300
+	color: $main
+	width: 70%
+	margin: -20px auto 30px
+	+media-breakpoint-down(xs)
+		margin-bottom: 20px
+		width: 100%
+		margin-top: -10px
+.page-title
+	+fs(24rem)
+	font-weight: 800
+	text-transform: uppercase
+	color: $main
+	margin-bottom: 30px
+	+media-breakpoint-down(xs)
+		+fs(18rem)
+		margin-bottom: 15px
+
+.home-feature
+	background: #dee8ee
+	padding: 30px 0
+	+media-breakpoint-down(xs)
+		padding: 15px 0px
+		padding-bottom: 15px
+	.feature-list
+	.feature
+		+media-breakpoint-down(xs)
+			margin-bottom: 10px
+		figure
+			+flexbox
+			justify-content: center
+			align-items: center
+			align-content: center
+			+media-breakpoint-down(xs)
+				justify-content: flex-start
+				align-content: flex-start
+				align-items: flex-start
+			.feature-icon
+				+media-breakpoint-down(xs)
+					width: 30px
+					height: 30px
+					+flexbox
+					justify-content: center
+					align-items: center
+				img
+					max-width: unset
+					+media-breakpoint-down(xs)
+						max-width: 100%
+						max-height: 100%
+			figcaption
+				padding-left: 20px
+				+fs(15rem)
+				text-transform: uppercase
+				font-weight: 300
+				+media-breakpoint-down(xs)
+					+fs(11rem)
+					font-weight: 600
+					width: calc(100% - 30px)
+					padding-left: 10px
+
+.home-intro
+	padding: 50px 0
+	+pos(rel,null)
+	&:after
+		content: ''
+		display: block
+		height: 7px
+		background: url(../img/home/introbg.png) center top no-repeat
+		+pos(abs, 100% 0 null 0)
+		z-index: 1
+	.intro-img
+		text-align: center
+		margin-bottom: 20px
+		+flexbox
+		justify-content: center
+		align-items: center
+		align-content: center
+
+.btn-homebutton
+	background: $yellow
+	color: $main
+	+fs(15rem)
+	text-transform: uppercase
+	display: inline-block
+	line-height: 40px
+	padding: 0px 25px
+	+bor-rad(3px)
+	&:hover
+		background: lighten($yellow,10%)
+		box-shadow: 0px 10px 20px -10px color-rgba($black,0.3)
+	&:after
+		content: '\f105'
+		margin-left: 5px
+
+.bg-img
+	+pos(abs, 0 null 0 0)
+	right: 0
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%
+		filter: blur(2px)
+		object-fit: cover
+		+transform(scale3d(1.1,1.1,1.1))
+
+.home-product
+	overflow: hidden
+	padding: 70px 0
+	+pos(rel,null)
+	.home-title
+		color: $white
+		margin-bottom: 50px
+		text-shadow: 0px 1px 1px color-rgba($black,0.5)
+	.product-list
+		.product
+			box-shadow: 0px 2px 5px color-rgba($black,0.3)
+			+transition(all,0.3s)
+			margin-bottom: 40px
+			&:hover
+				margin-top: -10px
+				box-shadow: 0px 5px 10px color-rgba($black,0.5)
+			figure
+				+pos(rel,null)
+				.product-img
+					img
+						width: 100%
+				figcaption
+					.product-name
+						+pos(abs, null 0 0 0)
+						padding: 15px 0
+						background: linear-gradient(color-rgba($black,0),color-rgba($black,0.8))
+						text-align: center
+						+fs(15rem)
+						text-transform: uppercase
+						a
+							color: $white
+.home-connect
+	background: $white
+	padding: 50px 0
+	+pos(rel,null)
+	&:after
+		content: ''
+		display: block
+		height: 7px
+		background: url(../img/home/introbg.png) center top no-repeat
+		+pos(abs, 100% 0 null 0)
+		z-index: 1
+	.connect-content
+		margin-bottom: 30px
+		.content
+			+fs(15rem)
+			line-height: 1.5
+			margin-bottom: 15px
+		.video
+			.video-img
+				display: block
+				+pos(rel,null)
+				&:before
+					content: '\f04b'
+					+pos(abs,0 null 0 0)
+					right: 0
+					background: color-rgba($black,0.5)
+					+flexbox
+					justify-content: center
+					align-items: center
+					+fs(60rem)
+					color: $white
+					+transition(all,0.5s)
+				&:hover
+					&:before 
+						background: color-rgba($black,0)
+						filter: brightness(120%)
+	.connect-step
+		padding: 10px 0
+		.step
+			border-bottom: 1px dashed darken($white,20%)
+			padding: 30px 30px
+			&:last-child
+				border-bottom: none
+			figure
+				+flexbox
+				align-items: center
+				align-content: center
+				.step-icon
+					width: 80px
+					height: 80px
+					+flexbox
+					// justify-content: center
+					align-items: center
+					+pos(rel,null)
+					img
+					.number
+						width: 32px
+						height: 32px
+						line-height: 32px
+						text-align: center
+						+bor-rad(50px)
+						background: $yellow
+						color: $main
+						+fs(18rem)
+						font-weight: 700
+						+pos(abs, 0 0 null null)
+				figcaption
+					width: calc(100% - 80px)
+					padding-left: 15px
+					.step-name 
+						+fs(15rem)
+						text-transform: uppercase
+						margin-bottom: 5px
+					.step-des
+						+fs(15rem)
+						font-weight: 300
+.home-app
+	background: darken($white,4%)
+	padding: 50px 0
+	.app-img
+		text-align: center
+		margin-bottom: 30px
+	.app-download
+		+flexbox
+		justify-content: center
+		align-items: center
+		align-content: center
+		a
+			+ a
+				margin-left: 10px
+
+.home-news
+	padding: 50px 0

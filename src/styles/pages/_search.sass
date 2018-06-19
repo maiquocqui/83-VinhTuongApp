@@ -1,0 +1,137 @@
+.sidebar-feature
+	.feature-list
+		padding: 0px 20px
+	.feature
+		padding: 20px 0
+		border-bottom: 1px solid darken($white,20%)
+		figure
+			+flexbox
+			align-items: center
+			align-content: center
+			.feature-icon
+				width: 32px
+				height: 32px
+				+flexbox
+				justify-content: center
+				align-items: center
+				align-content: center
+				img
+					max-width: 100%
+					max-height: 100%
+			figcaption
+				width: calc(100% - 32px)
+				padding-left: 10px
+				+fs(14rem)
+
+.search-worker
+	+pos(rel,null)
+	padding: 50px 0
+	.search-bg
+		+pos(abs, 0 null 0 0)
+		right: 0
+	.row
+		margin: 0px -10px
+	.col-12
+		padding: 0px 10px
+	.search-wrap
+		+pos(rel,null)
+		z-index: 5
+		.searchbox
+			+flexbox
+			align-items: center
+			align-content: center
+			background: $white
+			overflow: hidden
+			+bor-rad(5px)
+			box-shadow: 0px 2px 5px color-rgba($black,0.2)
+			input
+				width: calc(100% - 50px)
+				border: none
+				margin: 0
+				line-height: 50px
+				padding: 0px 20px
+				+fs(15rem)
+			.searchbutton
+				width: 50px
+				height: 50px
+				+flexbox
+				justify-content: center
+				align-items: center
+				align-content: center
+				line-height: 50px
+				text-align: center
+				color: darken($white,40%)
+				+transition(all,0.5s)
+				.material-icons
+					+fs(30rem)
+					line-height: 1
+				&:hover
+					color: $main
+	.btn-wrap
+		+pos(rel,null)
+		z-index: 5
+	.btn-searchadvance
+		+flexbox
+		height: 50px
+		align-items: center
+		align-content: center
+		+fs(15rem)
+		font-weight: 700
+		color: $main
+		text-decoration: underline
+		&:hover
+			color: $blue
+
+.searchworker-page
+	margin-bottom: 60px
+	background: $white
+	padding: 40px
+	border: 1px solid darken($white,10%)
+	border-top: none
+	+media-breakpoint-down(xs)
+		padding: 15px
+	.search-form
+		.form-wrap
+			.br-widget
+				a
+					+ a
+						margin-left: 5px
+					&:after
+						+fs(24rem)
+						color: darken($white,10%)
+					&.br-active
+						&:after
+							color: $yellow
+						&:hover
+							&:after
+								color: $yellow
+					&.br-selected
+						&:after
+							color: $yellow
+			input[type="submit"]
+				display: block
+				width: 100%
+				+fs(18rem)
+				font-weight: 700
+				color: $main
+				background: $yellow
+				text-transform: uppercase
+				text-align: center
+				padding: 20px 40px
+				line-height: 1
+				&:hover
+					background: $amber
+	.pro-detail-content
+		padding: 0
+.findpro-advsearch-link
+	display: inline-block
+	line-height: 36px
+	padding: 0px 30px
+	+fs(14rem)
+	margin-bottom: 20px
+	cursor: pointer
+	color: $white !important
+	background: $blue
+	&:hover
+		background: $yellow
+		color: $main !important

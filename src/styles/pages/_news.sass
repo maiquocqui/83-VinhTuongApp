@@ -1,0 +1,137 @@
+
+.news-list
+	article
+		margin-bottom: 40px
+	.news-col
+		figure
+			.news-img
+				display: block
+				img
+					width: 100%
+			figcaption
+				padding: 10px 0
+				time
+					+fs(12rem)
+					display: block
+					margin-bottom: 5px
+					&:before
+						content: '\f017'
+						margin-right: 5px
+				.news-name
+					+fs(16rem)
+					line-height: 1.3
+					font-weight: 600
+					text-transform: uppercase
+					margin-bottom: 10px
+					a
+						color: $main
+						&:hover
+							color: $blue
+				.news-des
+					+fs(14rem)
+					line-height: 1.3
+					font-weight: 300
+					display: -webkit-box
+					height: 0.875*1.3*4
+					-webkit-line-clamp: 4
+					-webkit-box-orient: vertical
+					overflow: hidden
+					text-overflow: ellipsis
+.newspage, .news-detail-page
+	main
+		background: $white
+.news-page
+	padding: 40px 0
+	background: $white
+	.home-title
+		text-transform: uppercase
+		font-weight: 700
+	.news-title
+		+fs(24rem)
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 10px
+	.news-info
+		border-bottom: 1px solid darken($white,10%)
+		+flexbox
+		justify-content: space-between
+		margin-bottom: 20px
+		time
+			display: block
+			+fs(13rem)
+			color: darken($white,60%)
+			&:before
+				content: '\f017'
+				margin-right: 5px
+	.author
+		border-top: 2px solid darken($white,10%)
+		+fs(12rem)
+		font-style: italic
+		color: darken($white,60%)
+		text-transform: uppercase
+		font-weight: 700
+		margin-top: 15px
+		padding: 5px 0
+
+.sidebar-news
+	background: darken($white,5%)
+	margin: 40px 0
+	padding: 20px
+	.module-title
+		+fs(16rem)
+		font-weight: 700
+		color: $main
+		margin-bottom: 20px
+	.post-list
+		.post
+			padding-bottom: 15px
+			margin-bottom: 15px
+			border-bottom: 1px dashed darken($white,10%)
+			&:last-child
+				margin-bottom: 0
+			figure
+				+flexbox
+				.post-img
+					display: block
+					width: 80px
+				figcaption
+					width: calc(100% - 80px)
+					padding-left: 15px
+					time
+						+fs(12rem)
+						display: block
+						margin-bottom: 5px
+						&:before
+							content: '\f017'
+							margin-right: 5px
+					.post-name
+						+fs(14rem)
+						line-height: 1.3
+						font-weight: 700
+						a
+							color: $main
+							&:hover
+								color: $blue
+
+.pages
+	margin-bottom: 30px
+	ul.pagination
+		+flexbox
+		justify-content: center
+		align-items: center
+		align-content: center
+		li
+			+ li
+				margin-left: 10px
+			a
+				display: block
+				width: 36px
+				height: 36px
+				line-height: 36px
+				text-align: center
+				+bor-rad(3px)
+				background: darken($white,3%)
+				font-weight: 700
+			&.active
+				a
+					background: $yellow

@@ -1,0 +1,114 @@
+.breadcrumb-wrap
+	.breadcrumb-img
+		img(src="img/breadcrumb/1.jpg", alt="")
+.container
+	.row.no-gutters
+		.col-12.col-lg-2
+			nav.sidebar-nav
+				ul
+					li
+						a(href="#!")
+							.icon <i class="material-icons">playlist_add</i>
+							.text Mới
+								span.number (
+									strong 2
+									|)
+					li
+						a(href="#!")
+							.icon <i class="material-icons">phone_in_talk</i>
+							.text Báo giá
+								span.number (
+									strong 0
+									|)
+					li.active
+						a(href="#!")
+							.icon <i class="material-icons">straighten</i>
+							.text Khảo sát
+								span.number (
+									strong 0
+									|)
+					li
+						a(href="#!")
+							.icon <i class="material-icons">done_all</i>
+							.text Hoàn thành
+								span.number (
+									strong 0
+									|)
+			//- .post-hotline
+				a(href="tel:1800 1218") <i class="material-icons">phone</i> 1800 1218
+		.col-12.col-lg-10
+			.requirement-page
+				.requirement-list
+					.requirement-group
+						.requirement-info
+							h2.requirement-name Nhà xưởng - Phòng làm việc - Cao cấp - Trần thạch cao
+							ul
+								li Đăng lúc: 
+									time 10:20 10/05/2017
+								li 45 Trương Đình Hội, Phường 16, Quận 8, HCM
+						.btn-wrap 
+							a.btn-cancel(href="#!" data-toggle='modal', data-target='#cancel-requirement') <i class="material-icons">delete</i> Hủy bỏ
+				.worker-list.selected
+					h3.worker-amount.font-weight-bold.text-primary Đã chọn thợ thi công
+					.worker
+						.worker-info
+							figure
+								.worker-img
+									img(src="img/worker/1.png", alt="")
+									<i class="material-icons check">check_circle</i>
+								figcaption
+									.worker-name Đội thi công Vĩnh Tường 01
+									ul
+										li Thi công 78 công trình
+											.rating
+												<i class="fa fa-star active" aria-hidden="true"></i>
+												<i class="fa fa-star active" aria-hidden="true"></i>
+												<i class="fa fa-star active" aria-hidden="true"></i>
+												<i class="fa fa-star active" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+										li Dự toán: 
+											strong 110,000 VND / m²
+										li Nhận lúc: 
+											time 10:50 10/05/2017
+						.btn-wrap
+							a.btn-viewpolicy(href="#!") Xem thỏa thuận
+							a.btn-call(href="tel:0123 456 789") <i class="material-icons">phone</i>0123 456 789
+
+// Modal
+//- #cancel-requirement.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog.modal-cancel(role='document')
+		.modal-content
+			.modal-header
+				h5.modal-title Hủy yêu cầu
+				.close(data-dismiss='modal', aria-label='Close')
+					i.material-icons close
+			.modal-body
+				.cancel-requirement
+					.form-wrap
+						.form-group
+							label Bạn vui lòng chia sẻ lý do hủy yêu cầu:
+							ul
+								li
+									.radio
+										input#radio1(type="radio", name="radio" checked)
+										label(for="radio1") Thông tin yêu cầu sai
+								li
+									.radio
+										input#radio2(type="radio", name="radio")
+										label(for="radio2") Tôi đã tìm được thợ
+								li
+									.radio
+										input#radio3(type="radio", name="radio")
+										label(for="radio3") Không còn yêu cầu nữa
+								li
+									.radio
+										input#radio4(type="radio", name="radio")
+										label(for="radio4") Công trình bị chậm tiến độ
+								li
+									.radio
+										input#radio5(type="radio", name="radio")
+										label(for="radio5") Lý do khác
+									input.form-control(type="text" placeholder="Vui lòng nêu lý do...")
+						.frm-btn
+							label Bạn có chắc chắn hủy yêu cầu?
+							input(type="submit", value="Xác nhận hủy yêu cầu")

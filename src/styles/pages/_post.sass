@@ -1,0 +1,562 @@
+.post-step
+	background: darken($white,9%)
+	margin-bottom: 10px
+	.step
+		padding: 20px
+		+media-breakpoint-down(xs)
+			padding: 10px
+		figure
+			+flexbox
+			.icon
+				width: 36px
+				padding-top: 5px
+				color: darken($white,60%)
+			figcaption
+				width: calc(100% - 36px)
+				+media-breakpoint-down(xs)
+					+flexbox
+					align-items: center
+					align-content: center
+				.number
+					+fs(24rem)
+					font-weight: 600
+					color: darken($white,60%)
+				.name
+					+fs(14rem)
+					color: darken($white,60%)
+		&.active
+			background: darken($white,16%)
+			figure
+				.icon
+					color: $main
+				figcaption
+					.number
+						color: $main
+						font-weight: 800
+					.name
+						color: $main
+						font-weight: 700
+		&.finish
+			background: darken($white,16%)
+.post-hotline
+	background: $yellow
+	+fs(24rem)
+	font-weight: 700
+	text-align: center
+	color: $main
+	+flexbox
+	justify-content: center
+	align-items: center
+	height: 90px
+	margin-bottom: 30px
+	+media-breakpoint-down(xs)
+		height: 70px
+	&.post-requirement
+		+fs(16rem)
+	a
+		+flexbox
+		align-items: center
+		justify-content: center
+		+fs(24rem)
+		.material-icons
+			margin-right: 5px
+.form-wrap
+	.form-row 
+		margin: 0px -10px
+		> .col, > [class*="col-"]
+			padding: 0px 10px
+		> .form-row
+			margin: 0px -5px
+			> .col, > [class*="col-"]
+				padding: 0px 5px
+	.form-group
+		+pos(rel,null)
+		margin-bottom: 30px
+		+media-breakpoint-down(xs)
+			margin-bottom: 15px
+		.fa.fa-exclamation-triangle
+			top: 7px
+			right: 15px
+			+fs(0)
+			&:before
+				+fs(16rem)
+		.error
+			color: $red
+		&:after
+			content: ''
+			+fs(18rem)
+			color: $yellow
+			+pos(abs, null 10px 5px null)
+		&.date
+			&:after
+				content: '\f073'
+		&.place
+			&:after
+				content: '\f041'
+		> label
+			+fs(15rem)
+			margin-bottom: 5px
+			+ .file
+				margin-left: 10px
+		.form-control
+			+bor-rad(0)
+			border: none
+			background: none
+			border-bottom: 1px solid darken($white,20%)
+			+fs(16rem)
+			font-weight: 700
+		ul
+			li
+				+flexbox
+				align-items: center
+				align-content: center
+				margin-bottom: 10px
+				.radio
+					label
+						font-weight: 600
+				.file
+					margin-left: 15px
+					label
+						+fs(24rem)
+						opacity: 0.5
+						&:hover
+							opacity: 1
+		.dropdown
+			.dropdown-toggle
+				+flexbox
+				align-items: center
+				align-content: center
+				+fs(16rem)
+				font-weight: 700
+				+pos(rel,null)
+				&:after
+					content: '\f107'
+					border: none
+					width: auto
+					height: auto
+					font-weight: normal
+					+pos(abs, null 10px 5px null)
+				.img
+					margin-right: 5px
+					img
+						display: block
+				.text
+					+fs(16rem)
+					font-weight: 700
+			.dropdown-menu
+				.dropdown-item
+					+flexbox
+					align-items: center
+					align-content: center
+					+fs(16rem)
+					font-weight: 700
+					.img
+						margin-right: 5px
+						img
+							display: block
+					.text
+						+fs(16rem)
+						font-weight: 700
+	.form-notice
+		+fs(15rem)
+		font-style: italic
+	.form-check
+		margin-bottom: 30px
+		.checkbox
+			label
+				+fs(15rem)
+				&:before, &:after
+					top: 3px
+				a
+					color: $blue
+					text-decoration: underline
+					&:hover
+						color: $yellow
+	.frm-btn
+	input[type="submit"], .btn-primary, .login-button
+		+mainbutton
+	.forget
+		margin-bottom: 0
+		padding-top: 15px !important
+
+.post-page
+	margin-bottom: 60px
+	background: $white
+	padding: 40px
+	border: 1px solid darken($white,10%)
+	border-top: none
+	+media-breakpoint-down(xs)
+		padding: 15px
+	.post-group
+		padding-bottom: 40px
+		margin-bottom: 40px
+		border-bottom: 1px solid darken($white,10%)
+		&:last-child
+			border-bottom: none
+	.post-form
+	.working-place
+		margin-bottom: 40px
+		> label
+			+fs(15rem)
+			margin-bottom: 10px
+		.place-group
+			+bor-rad(5px)
+			overflow: hidden
+			margin-bottom: 10px
+			background: darken($white,4%)
+			&.active
+				.place-name
+					// background: $yellow
+					// color: $main
+					// &:after
+					// 	opacity: 1
+				.place-form
+					display: block
+			&.checked
+				.place-name
+					&:after
+						opacity: 1
+			.place-name
+				+fs(18rem)
+				font-weight: 600
+				color: $main
+				background: #a4d0eb
+				padding: 8px 20px
+				+pos(rel,null)
+				+media-breakpoint-down(xs)
+					padding: 5px 15px
+					+fs(14rem)
+				.place-name-sub
+					+fs(12rem)
+					color: darken($white,60%)
+					font-weight: 600
+				&:after
+					content: '\f00c'
+					margin-left: 10px
+					opacity: 0
+					+transition(all,0.3s)
+					+pos(abs,50% 20px null null)
+					+transform(translateY(-50%))
+			.place-form
+				display: none
+				background: #daf0fc
+				.form-name
+					padding: 8px 20px
+					color: $main
+					font-weight: 600
+					+fs(15rem)
+					background: #bcd9eb
+					+pos(rel,nul)
+					.form-close
+						+pos(abs,8px 10px null null)
+						display: none
+				.project-work, .project-budget
+					.checkbox
+						input
+							+ label
+								margin-right: 15px
+				.form-wrap
+					padding: 20px
+					+media-breakpoint-down(xs)
+						padding: 10px
+					.btn-agree
+						margin-left: 10px
+						a
+							display: inline-block
+							line-height: 40px
+							font-size: 1.125rem
+							font-family: 'Muli'
+							text-transform: uppercase
+							font-weight: 600
+							color: $main
+							border: none
+							+bor-rad(0)
+							outline: none
+							background: $yellow
+							padding: 0px 20px
+							border: none
+							-webkit-transition: all, 0.5s
+							transition: all, 0.5s
+							+media-breakpoint-down(xs)
+								line-height: 30px
+								+fs(13rem)
+								padding: 0px 15px
+							&:hover
+								background: lighten($yellow,10%)
+					.btn-cancel
+						margin-left: 15px
+						a
+							display: inline-block
+							line-height: 40px
+							font-size: 1.125rem
+							font-family: 'Muli'
+							text-transform: uppercase
+							font-weight: 600
+							color: $white
+							border: none
+							+bor-rad(0)
+							outline: none
+							background: $blue
+							padding: 0px 20px
+							border: none
+							-webkit-transition: all, 0.5s
+							transition: all, 0.5s
+							+media-breakpoint-down(xs)
+								line-height: 30px
+								+fs(13rem)
+								padding: 0px 15px
+							&:hover
+								background: lighten($blue,10%)
+				
+	.post-contact
+		border: 1px solid darken($white,20%)
+		.nav-tabs
+			margin: 0
+			padding: 0
+			background: linear-gradient(darken($white,5%),darken($white,10%))
+			border-bottom: 1px solid darken($white,20%)
+			.nav-item
+				margin: 0
+				padding: 0
+				border-right: 1px solid darken($white,20%)
+				.nav-link
+					padding: 7px 25px
+					margin: 0 0 -1px
+					color: darken($white,60%)
+					border: none
+					+bor-rad(0)
+					border-bottom: 1px solid darken($white,20%)
+					background: none
+					+media-breakpoint-down(xs)
+						padding: 5px 15px
+					.tab-name
+						+fs(18rem)
+						text-transform: uppercase
+						font-weight: 700
+						+media-breakpoint-down(xs)
+							+fs(13rem)
+					.tab-des
+						+fs(13rem)
+						font-weight: 300
+						font-style: italic
+						opacity: 0.5
+						+media-breakpoint-down(xs)
+							+fs(11rem)
+					&.active
+						background: $white
+						border-bottom-color: $white
+						color: $main
+		.tab-content
+			.tab-pane
+				padding: 30px
+	.info-group
+		.info-table
+			width: 100%
+			margin-bottom: 50px
+			tr 
+			td
+				+fs(15rem)
+				padding: 10px 0
+				border-bottom: 1px solid darken($white,10%)
+				&:first-child
+					width: 180px
+				&:last-child
+					+fs(18rem)
+					text-align: right
+					font-weight: 600
+	.btn-uploadpicture
+		display: inline-block
+		color: $white
+		line-height: 34px
+		background: $blue
+		padding: 0px 10px
+		+fs(13rem)
+		.fa
+			margin-right: 5px
+		&:hover
+			background: lighten($blue,10%)
+			color: $white
+	.files
+		// display: block
+		// overflow: auto
+		// white-space: nowrap
+		padding-top: 20px
+		+flexbox
+		flex-wrap: wrap
+		margin: 0px -10px
+		+media-breakpoint-down(xs)
+			margin: 0px -5px
+		.text-danger
+			display: none
+		> div
+			// width: calc(100% / 6)
+			padding: 0px 10px
+			+media-breakpoint-down(xs)
+				width: 25%
+				padding: 0 5px
+			// + div
+			// 	margin-left: 20px
+			p
+				display: block
+				+pos(rel,null)
+				br
+					display: none
+				canvas
+					border: 1px solid darken($white,10%)
+					margin-bottom: 10px
+					+media-breakpoint-down(xs)
+						width: 100% !important
+						height: auto !important
+						margin-bottom: 5%
+				.btn-primary
+					+fs(0)
+					+flexbox
+					width: 16px
+					height: 16px
+					justify-content: center
+					align-items: center
+					align-content: center
+					color: $white
+					background: $red
+					border: none
+					padding: 0
+					margin: 0
+					+bor-rad(50px)
+					+pos(abs, 5px 5px null null)
+					&:before
+						content: ''
+						font-family: ''
+						+fs(12rem)
+						line-height: 1
+					&:hover
+						background: lighten($red,10%)
+				a
+					display: none
+	.btn-wrap
+		+flexbox
+		flex-wrap: wrap
+		a
+			display: block
+			+fs(18rem)
+			font-weight: 600
+			color: $white
+			text-transform: uppercase
+			padding: 15px 50px
+			+media-breakpoint-down(xs)
+				line-height: 36px
+				padding: 0px 20px
+				+fs(13rem)
+			&:hover
+				filter: brightness(120%)
+			&.btn-prev
+				background: $blue
+				opacity: 0.8
+			&.btn-next
+				background: $blue
+				&:after
+					content: '\f105'
+					margin-left: 5px
+					font-weight: normal
+.project-finish-wrap
+	padding: 80px 0
+.project-finished
+	width: 400px
+	margin: 0 auto
+	+pos(rel,null)
+	background: $white
+	box-shadow: 0px 10px 30px color-rgba($black,0.2)
+	.project-finished-title
+		+fs(18rem)
+		font-weight: 700
+		color: $main
+		padding: 10px 30px
+		text-align: center
+	.download-app
+		+pos(rel,null)
+		padding: 20px 30px 0
+		overflow: hidden
+		.module-title
+			+fs(15rem)
+			line-height: 1.3
+			margin-bottom: 15px
+		.img
+			+flexbox
+			justify-content: center
+			img
+				max-width: unset
+		.download-link
+			+flexbox
+			justify-content: center
+			+pos(abs, null 0 30px 0)
+			a
+				display: block
+				width: 160px
+				height: 56px
+				+flexbox
+				justify-content: center
+				align-items: center
+				background: linear-gradient($white,darken($white,10%))
+				+bor-rad(5px)
+				box-shadow: 0px 5px 10px color-rgba($black,0.1)
+				+ a
+					margin-left: 10px
+				&:hover
+					box-shadow: 0px 5px 20px color-rgba($black,0.5)
+				&:active
+					background: linear-gradient(darken($white,10%),$white)
+
+.solution-wrap
+	width: 100%
+.solution-info
+	// width: 600px
+	// margin: 0 auto 15px
+	figure
+		+flexbox
+		align-items: center
+		align-content: center
+		cursor: pointer
+		.solution-img
+			width: 80px
+			height: 80px
+			background: darken($white,40%)
+		figcaption
+			width: calc(100% - 80px)
+			+flexbox
+			align-items: center
+			padding-left: 20px
+			.solution-name
+				+fs(14rem)
+				color: darken($white,60%)
+				width: calc(100% - 30px)
+			.solution-des
+				width: 30px
+				text-align: right
+				.material-icons
+					color: $blue
+		&:hover
+			figcaption
+				.solution-name
+					color: $blue
+.solution-price
+	+flexbox
+	justify-content: center
+	margin-bottom: 30px
+	table
+		width: 500px
+		+bor-rad(5px)
+		overflow: hidden
+		border: 1px solid darken($white,10%)
+		+media-breakpoint-down(sm)
+			width: 100%
+		th
+			color: $main
+			font-weight: 600
+			background: $yellow
+			text-align: center
+			padding: 8px
+			width: 50%
+		td
+			background: $white
+			color: $blue
+			padding: 8px
+			text-align: center

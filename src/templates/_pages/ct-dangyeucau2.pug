@@ -1,0 +1,144 @@
+.breadcrumb-wrap
+	.breadcrumb-img
+		img(src="img/breadcrumb/1.jpg", alt="")
+.container
+	.row.no-gutters
+		.col-12.col-lg-2
+			.post-step
+				.step.finish
+					figure
+						.icon <i class="material-icons">chat</i>
+						figcaption
+							.number 01.
+							.name Đăng yêu cầu
+				.step.active
+					figure
+						.icon <i class="material-icons">list</i>
+						figcaption
+							.number 02.
+							.name Thông tin liên hệ
+				.step
+					figure
+						.icon <i class="material-icons">playlist_add_check</i>
+						figcaption
+							.number 03.
+							.name Xác nhận thông tin
+			.post-hotline
+				a(href="tel:1800 1218") <i class="material-icons">phone</i> 1800 1218
+		.col-12.col-lg-10
+			.post-page
+				.post-group
+					h1.page-title Nhập thông tin công trình
+					.post-form
+						.form-wrap
+							.form-row
+								.form-group.date.col-12.col-md-5.col-lg-4
+									label Thời gian dự kiến bắt đầu
+									input.form-control.datepicker(type="text" value="28-12-2017")
+								.form-group.place.col-12.col-md-7.col-lg-8
+									label Địa điểm thi công
+									input.form-control(type="text" placeholder="")
+								.form-group.col-12.col-md-6.col-lg-3
+									label Tỉnh/Thành
+									select.form-control
+										option(selected) TP.HCM
+								.form-group.col-12.col-md-6.col-lg-3
+									label Quận/Huyện
+									select.form-control
+										option(selected) Quận 8
+								.form-group.col-12.col-lg-6
+									label Lời nhắn/Ghi chú (vui lòng không nhập số điện thoại và địa chỉ)
+									input.form-control(type="text")
+						.form-notice Lưu ý: Địa chỉ, số điện thoại liên hệ sẽ được bảo mật cho đến khi bạn chấp nhận báo giá của thợ.
+				.post-group
+					h2.page-title Nhập thông tin liên hệ
+					.post-contact
+						ul#myTab.nav.nav-tabs(role='tablist')
+							li.nav-item
+								a.nav-link.active(data-toggle='tab', href='#tab1', role='tab')
+									.tab-name Đăng nhập
+									.tab-des Đã có tài khoản
+							li.nav-item
+								a.nav-link(data-toggle='tab', href='#tab2', role='tab')
+									.tab-name Tạo tài khoản
+									.tab-des Dành cho chủ nhà mới
+						#myTabContent.tab-content
+							#tab1.tab-pane.fade.show.active(role='tabpanel')
+								.form-wrap
+									.form-row
+										.form-group.col-12.col-md-6
+											label Số điện thoại
+											input.form-control(type="text" placeholder="" value="0981543543")
+										.form-group.col-12.col-md-6
+											label Mật khẩu
+											input.form-control(type="password" placeholder="" value="0981543543")
+										.frm-btn.col-12
+											input(type="submit", value="Đăng ký")
+										.form-group.forget.col-12
+											a(href="#!") Quên mật khẩu?
+							#tab2.tab-pane.fade(role='tabpanel')
+								.form-wrap
+									.form-row
+										.form-group.col-12.col-md-6
+											label Số điện thoại
+											.form-row
+												.col-4
+													.dropdown
+														.dropdown-toggle.form-control(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+															.img
+																img(src="img/vn.png", alt="")
+															.text +84
+														.dropdown-menu(aria-labelledby='dropdownMenuButton')
+															a.dropdown-item.active(href='#') 
+																.img
+																	img(src="img/vn.png", alt="")
+																.text +84
+															a.dropdown-item(href='#')
+																.img
+																	img(src="img/vn.png", alt="")
+																.text +84
+															a.dropdown-item(href='#')
+																.img
+																	img(src="img/vn.png", alt="")
+																.text +84
+												.col-8
+													input.form-control(type="text" value="981543543")
+										.form-group.col-12.col-md-6
+											label Đặt mật khẩu
+											input.form-control(type="password")
+										.form-group.col-12.col-md-4
+											label Họ và tên
+											input.form-control(type="text" value="Nguyễn Minh Liêm")
+										.form-group.col-12.col-md-2
+											label(for="") Giới tính
+											.dropdown
+												.dropdown-toggle.form-control(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+													|Nam
+												.dropdown-menu(aria-labelledby='dropdownMenuButton')
+													a.dropdown-item.active(href='#') Nam
+													a.dropdown-item(href='#') Nữ
+										.form-group.col-12.col-md-6
+											label Email(Nhận thông tin báo giá/biên nhận)
+											input.form-control(type="email" value="minhliem@twin.vn")
+										.form-check.col-12
+											ul
+												li
+													.checkbox
+														input#agree1(type='checkbox')
+														label(for="agree1") Tôi đồng ý chịu trách nhiệm về tính chính xác của thông tin cung cấp.
+												li
+													.checkbox
+														input#agree2(type='checkbox')
+														label(for="agree2") Tôi đã đọc và đồng ý các 
+															a(href="#!") Điều khoản sử dụng 
+															|và 
+															a(href="#!") Chính sách bảo mật 
+															|của công ty
+										.frm-btn.col-12
+											input(type="submit", value="Đăng ký")
+
+
+				
+				.btn-wrap.justify-content-between
+					a.btn-prev(href="#!") Nhập lại
+					a.btn-next(href="#!") Tiếp tục

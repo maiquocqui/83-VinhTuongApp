@@ -1,0 +1,105 @@
+.breadcrumb-wrap
+	.breadcrumb-img
+		img(src="img/breadcrumb/1.jpg", alt="")
+.container
+	//- .row.no-gutters
+		//- .col-12.col-lg-2
+			.post-step
+				.step.active
+					figure
+						.icon <i class="material-icons">chat</i>
+						figcaption
+							.number 01.
+							.name Đăng yêu cầu
+				.step
+					figure
+						.icon <i class="material-icons">list</i>
+						figcaption
+							.number 02.
+							.name Thông tin liên hệ
+				.step
+					figure
+						.icon <i class="material-icons">playlist_add_check</i>
+						figcaption
+							.number 03.
+							.name Xác nhận thông tin
+			.post-hotline
+				a(href="tel:1800 1218") <i class="material-icons">phone</i> 1800 1218
+		//- .col-12.col-lg-10
+	.post-page
+		h1.page-title Nhập thông tin công trình cần tham khảo giá
+		//- .page-des Nhập thông tin công trình bạn cần tham khảo giá
+		.post-form
+			.form-wrap
+				.form-row
+					.form-group.col-12.col-md-6
+						label Loại công trình
+						select.form-control
+							option Nhà phố
+					.form-group.col-12.col-md-6
+						label Tỉnh/Thành phố
+						select.form-control
+							option Tp.Hồ Chí Minh
+					//- .form-group.col-12.col-md-4
+						label Bản vẽ kỹ thuật
+						ul
+							li
+								.radio
+									input#radio1(name='radio', type='radio')
+									label(for="radio1") Có bản vẽ
+								.file
+									input#file2(type='file')
+									label(for="file2") <i class="fa fa-file-image-o" aria-hidden="true"></i>
+							li
+								.radio
+									input#radio2(name='radio', type='radio')
+									label(for="radio2") Không có bản vẽ
+		.working-place
+			label Khu vực thi công
+			.place-group
+				.place-name Phòng làm việc
+				.place-form
+					.form-name Chọn thông tin thi công
+						.form-close 
+							i.material-icons close
+					.form-wrap
+						.form-row
+							.form-group.col-12.col-md-6.col-lg-4
+								label Nhu cầu thi công
+								select.form-control
+									option(selected) Trần & tường thạch cao
+							.form-group.col-12.col-md-6.col-lg-4
+								label Ngân sách
+								select.form-control
+									option(selected) Cao cấp
+			.place-group
+				.place-name Trần nhà xưởng
+				.place-form
+					.form-name Chọn thông tin thi công
+					.form-wrap
+						.form-row
+							.form-group.col-12.col-md-6.col-lg-4
+								label Nhu cầu thi công
+								select.form-control
+									option(selected) Trần & tường thạch cao
+							.form-group.col-12.col-md-6.col-lg-4
+								label Ngân sách
+								select.form-control
+									option(selected) Cao cấp
+			.place-group
+				.place-name Khu vực khác
+				.place-form
+					.form-name Chọn thông tin thi công
+					.form-wrap
+						.form-row
+							.form-group.col-12.col-md-6.col-lg-4
+								label Nhu cầu thi công
+								select.form-control
+									option(selected) Trần & tường thạch cao
+							.form-group.col-12.col-md-6.col-lg-4
+								label Ngân sách
+								select.form-control
+									option(selected) Cao cấp
+		.btn-wrap.justify-content-between
+			a.btn-prev(href="#!") Nhập lại
+			a.btn-next(href="#!") Tiếp tục

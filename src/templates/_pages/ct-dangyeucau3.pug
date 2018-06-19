@@ -1,0 +1,79 @@
+.breadcrumb-wrap
+	.breadcrumb-img
+		img(src="img/breadcrumb/1.jpg", alt="")
+.container
+	.row.no-gutters
+		.col-12.col-lg-2
+			.post-step
+				.step.finish
+					figure
+						.icon <i class="material-icons">chat</i>
+						figcaption
+							.number 01.
+							.name Đăng yêu cầu
+				.step.active
+					figure
+						.icon <i class="material-icons">list</i>
+						figcaption
+							.number 02.
+							.name Thông tin liên hệ
+				.step
+					figure
+						.icon <i class="material-icons">playlist_add_check</i>
+						figcaption
+							.number 03.
+							.name Xác nhận thông tin
+			.post-hotline
+				a(href="tel:1800 1218") <i class="material-icons">phone</i> 1800 1218
+		.col-12.col-lg-10
+			.post-page
+				.info-group
+					h1.page-title Thông tin công trình
+					table.info-table
+						tr
+							td Hạng mục công trình
+							td Nhà xưởng - Phòng làm việc - Cao cấp - Trần thạch cao
+						tr
+							td Tổng diện tích sàn (m2)
+							td 50.00 m2
+						tr
+							td Khu vực
+							td Quận 8, TP. Hồ Chí Minh
+						tr
+							td Thời gian dự kiến bắt đầu
+							td 25/07/2017
+						tr
+							td Lời nhắn/ Ghi chú
+							td Tôi cần làm gấp để vào ở đầu tháng
+				.info-group
+					h2.page-title Thông tin liên hệ
+					table.info-table
+						tr
+							td Họ và tên
+							td Nguyễn Minh Liêm
+						tr
+							td Số điện thoại
+							td 0912451523
+						tr
+							td Email
+							td liemnm@twin.vn
+				.btn-wrap.justify-content-between
+					a.btn-prev(href="#!") Nhập lại
+					a.btn-next(href="#!" data-toggle='modal', data-target='#downloadapp') Tiếp tục
+// Modal
+#downloadapp.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog.modal-app(role='document')
+		.modal-content
+			.modal-header
+				h5.modal-title Thông báo
+				.close(data-dismiss='modal', aria-label='Close')
+					i.material-icons close
+			.modal-body.download-app(style="background: url(img/downloadapp.jpg) center center no-repeat;background-size: cover")
+				.module-title Hãy để chúng tôi có thể chăm sóc tốt hơn nhu cầu của bạn cùng trải nghiệm mới mẻ về Vĩnh Tường App tại đây.
+				.img
+					img(src="img/mobile.png", alt="")
+				.download-link
+					a(href="#!")
+						img(src="img/dlink1.png", alt="")
+					a(href="#!")
+						img(src="img/dlink2.png", alt="")

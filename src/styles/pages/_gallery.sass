@@ -1,0 +1,30 @@
+.album-list
+	.album
+		padding-bottom: 20px
+		margin-bottom: 30px
+		border-bottom: 1px dashed darken($white,20%)
+		.album-name
+			+fs(16rem)
+			color: $main
+			background: $yellow
+			padding: 8px 15px
+			font-weight: 700
+			margin-bottom: 10px
+			+media-breakpoint-down(xs)
+				+fs(14rem)
+				padding: 5px 15px
+		.picture-list
+			+flexbox
+			flex-wrap: wrap
+			.picture
+				display: block
+				margin-right: 10px
+				margin-bottom: 10px
+				filter: brightness(90%)
+				img
+					height: 200px
+					+media-breakpoint-down(xs)
+						height: 60px
+				&:hover
+					filter: brightness(120%)
+					box-shadow: 0px 5px 20px color-rgba($black,0.2)

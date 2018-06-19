@@ -1,0 +1,163 @@
+.breadcrumb-wrap
+	.breadcrumb-img
+		img(src="img/breadcrumb/1.jpg", alt="")
+.container
+	//- .row.no-gutters
+		//- .col-12.col-lg-2
+			.post-step
+				.step.active
+					figure
+						.icon <i class="material-icons">chat</i>
+						figcaption
+							.number 01.
+							.name Đăng yêu cầu
+				.step
+					figure
+						.icon <i class="material-icons">list</i>
+						figcaption
+							.number 02.
+							.name Thông tin liên hệ
+				.step
+					figure
+						.icon <i class="material-icons">playlist_add_check</i>
+						figcaption
+							.number 03.
+							.name Xác nhận thông tin
+			.post-hotline
+				a(href="tel:1800 1218") <i class="material-icons">phone</i> 1800 1218
+		//- .col-12.col-lg-10
+	.post-page
+		h1.page-title Giá tham khảo
+		//- .page-des Nhập thông tin công trình bạn cần tham khảo giá
+		//- .post-form
+			.form-wrap
+				.form-row
+					.form-group.col-12.col-md-6
+						label Loại công trình
+						select.form-control
+							option Nhà phố
+					.form-group.col-12.col-md-6
+						label Tỉnh/Thành phố
+						select.form-control
+							option Tp.Hồ Chí Minh
+					//- .form-group.col-12.col-md-4
+						label Bản vẽ kỹ thuật
+						ul
+							li
+								.radio
+									input#radio1(name='radio', type='radio')
+									label(for="radio1") Có bản vẽ
+								.file
+									input#file2(type='file')
+									label(for="file2") <i class="fa fa-file-image-o" aria-hidden="true"></i>
+							li
+								.radio
+									input#radio2(name='radio', type='radio')
+									label(for="radio2") Không có bản vẽ
+		.working-place
+			//- label Khu vực thi công
+			.place-group
+				.place-name Nhà phố - Phòng bếp - Cao cấp - Trần
+				.place-form
+					//- .form-name Chọn thông tin thi công
+						.form-close 
+							i.material-icons close
+					.form-wrap
+						.form-row
+							.form-group.col-12.col-md-6.col-lg-4
+								label Gói giải pháp
+								select.form-control
+									option(selected) Alpha + Gyproc MR 9mm
+							.form-group.col-12.col-lg-6
+								.solution-info(data-toggle='modal', data-target='#solution-info')
+									figure
+										.solution-img
+										figcaption
+											.solution-name Khung xương Vĩnh Tường VTC-ALPHA, khẩu độ thanh chính @ 1000mm, khẩu độ thanh phụ @ 406mm. Tấm thạch cao Gyproc Gyproc Chống ẩm - Chống cháy lan 9mm
+											.solution-des <i class="material-icons">help_outline</i>
+							.solution-wrap
+								.solution-price
+									table
+										thead
+											tr
+												th Từ
+												th Đến
+										tbody
+											tr
+												td 0 VND
+												td 500.000 VND
+			.place-group
+				.place-name Nhà phố - Phòng bếp - Cao cấp - Trần
+				.place-form
+					//- .form-name Chọn thông tin thi công
+						.form-close 
+							i.material-icons close
+					.form-wrap
+						.form-row
+							.form-group.col-12.col-md-6.col-lg-4
+								label Gói giải pháp
+								select.form-control
+									option(selected) Alpha + Gyproc MR 9mm
+							.form-group.col-12.col-lg-6
+								.solution-info(data-toggle='modal', data-target='#solution-info')
+									figure
+										.solution-img
+										figcaption
+											.solution-name Khung xương Vĩnh Tường VTC-ALPHA, khẩu độ thanh chính @ 1000mm, khẩu độ thanh phụ @ 406mm. Tấm thạch cao Gyproc Gyproc Chống ẩm - Chống cháy lan 9mm
+											.solution-des <i class="material-icons">help_outline</i>
+							.solution-wrap
+								.solution-price
+									table
+										thead
+											tr
+												th Từ
+												th Đến
+										tbody
+											tr
+												td 0 VND
+												td 500.000 VND
+		.btn-reviewwrap
+			a.review-notice(href="#!") <i class="material-icons">launch</i> Đăng yêu cầu thi công trần / tường
+
+
+// Modal
+#solution-info.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog.modal-solution(role='document')
+		.modal-content
+			.modal-header
+				h5.modal-title TopLine Plus + GypDecor
+				.close(data-dismiss='modal', aria-label='Close')
+					i.material-icons close
+			.modal-body.solution-info
+				.content
+					p.text-uppercase
+						strong Hệ trần nổi Topline Plus
+					p TopLINE Plus là khung trần nổi (trần thả) phổ thông của Vĩnh Tường, phù hợp cho hầu hết tất cả các công trình: nhà dân dụng, văn phòng, khu vực giải trí, thương mại...
+					.row
+						.col-12.col-md-4
+							figure
+								img.border(src="img/project/img1.jpg", alt="")
+						.col-12.col-md-8
+							p
+								strong Tính năng nổi trội
+							ul
+								li 
+									span Dễ lắp đặt, tiết kiệm thời gian thi công
+								li 
+									span Thuận tiện trong việc bảo trì, sửa chữa các hệ thống cơ điện phía trên trần
+								li 
+									span Và đặc biệt, Vĩnh Tường TopLINE Plus với đầu ngàm mới với nhiều ưu điểm vượt trội:
+									ul
+										li - THÁO LẮP dễ dàng hơn: ngàm liên kết (lưỡi gà) có chức năng đàn hồi => lắp ghép nhẹ hơn & dễ dàng tháo gỡ không làm hư sản phẩm.
+										li - SIÊU CỨNG CHẮC với đầu ngàm inox vát 45 độ
+										li - Thi công NHANH hơn: thuận tay hơn khi lắp ghép đầu ngàm cải tiến mới vào khe trái lỗ chữ H giúp thi công nhanh và dễ hơn so với đầu ngàm hiện tại.
+							p 
+								strong Ứng dụng
+							ul
+								li 
+									span VĨNH TƯỜNG TopLINE Plus sử dụng cho hệ trần nổi, đi với tấm vuông cạnh hoặc vạt cạnh gờ lớn
+							p
+								strong Tiêu chuẩn sản xuất
+							ul
+								li 
+									span Tiêu chuẩn Mỹ ASTM C635:13a

@@ -1,0 +1,272 @@
+.breadcrumb-wrap
+	.breadcrumb-img
+		img(src="img/breadcrumb/1.jpg", alt="")
+.container
+	.row.no-gutters
+		.col-12.col-lg-2
+			nav.sidebar-nav
+				ul
+					li
+						a(href="#!")
+							.icon <i class="material-icons">playlist_add</i>
+							.text Mới
+								span.number (
+									strong 2
+									|)
+					li.active
+						a(href="#!")
+							.icon <i class="material-icons">phone_in_talk</i>
+							.text Báo giá
+								span.number (
+									strong 0
+									|)
+					li
+						a(href="#!")
+							.icon <i class="material-icons">straighten</i>
+							.text Khảo sát
+								span.number (
+									strong 0
+									|)
+					li
+						a(href="#!")
+							.icon <i class="material-icons">done_all</i>
+							.text Hoàn thành
+								span.number (
+									strong 0
+									|)
+			//- .post-hotline
+				a(href="tel:1800 1218") <i class="material-icons">phone</i> 1800 1218
+		.col-12.col-lg-10
+			.requirement-page
+				.worker-detail
+					.worker-info
+						figure
+							.worker-img
+								img(src="img/worker/1.png", alt="")
+							figcaption
+								h1.worker-name Đội thi công Vĩnh Tường 01
+								ul
+									li <i class="fa fa-map-marker" aria-hidden="true"></i> Khu vực hoạt động: Quận 1,2,3,4 - TP. HCM
+									li 
+										.rating
+											i.fa.fa-star.active
+											i.fa.fa-star.active
+											i.fa.fa-star.active
+											i.fa.fa-star.active
+											i.fa.fa-star
+								.btn-wrap
+									a.btn-like(href="#!")
+					.worker-project
+						ul#myTab.nav.nav-tabs(role='tablist')
+							li.nav-item
+								a.nav-link.active(data-toggle='tab', href='#tab1', role='tab') Công trình mẫu
+							li.nav-item
+								a.nav-link(data-toggle='tab', href='#tab2', role='tab') Khách đánh giá
+							li.nav-item
+								a.nav-link(data-toggle='tab', href='#tab3', role='tab') Báo giá
+						#myTabContent.tab-content
+							#tab1.tab-pane.fade.show.active(role='tabpanel')
+								.project-filter
+									.row
+										.col-12.col-sm-6.col-md-4
+											select.form-control
+												option(selected) Nhà phố
+										.col-12.col-sm-6.col-md-4
+											select.form-control
+												option(selected) Phòng ngủ
+								.project-list
+									.row
+										article.col-12.col-sm-6.col-md-4
+											.project-col
+												figure
+													a.project-img(href="#!")
+														img(src="img/project/1.jpg", alt="")
+													figcaption
+														h2.project-name
+															a(href="#!") Phòng khách 1
+										article.col-12.col-sm-6.col-md-4
+											.project-col
+												figure
+													a.project-img(href="#!")
+														img(src="img/project/2.jpg", alt="")
+													figcaption
+														h2.project-name
+															a(href="#!") Phòng khách 2
+										article.col-12.col-sm-6.col-md-4
+											.project-col
+												figure
+													a.project-img(href="#!")
+														img(src="img/project/3.jpg", alt="")
+													figcaption
+														h2.project-name
+															a(href="#!") Phòng khách 3
+										article.col-12.col-sm-6.col-md-4
+											.project-col
+												figure
+													a.project-img(href="#!")
+														img(src="img/project/4.jpg", alt="")
+													figcaption
+														h2.project-name
+															a(href="#!") Phòng khách 4
+										article.col-12.col-sm-6.col-md-4
+											.project-col
+												figure
+													a.project-img(href="#!")
+														img(src="img/project/5.jpg", alt="")
+													figcaption
+														h2.project-name
+															a(href="#!") Phòng khách 5
+										article.col-12.col-sm-6.col-md-4
+											.project-col
+												figure
+													a.project-img(href="#!")
+														img(src="img/project/6.jpg", alt="")
+													figcaption
+														h2.project-name
+															a(href="#!") Phòng khách 6
+								.project-notice (Vĩnh Tường không chịu trách nhiệm về tính trung thực của hình ảnh mà thợ thi công đưa lên)
+							#tab2.tab-pane.fade(role='tabpanel')
+								.customer-review
+									.review
+										figure
+											.author-img
+												img(src="img/avt.png", alt="")
+											figcaption
+												h4.review-author Chủ nhà 1
+												.review-content.content
+													p “Tôi rất hài lòng về ngôi nhà của mình sau khi được nâng cấp, cám ơn đội thi công của Vĩnh Tường nhé.”
+												.rating
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+									.review
+										figure
+											.author-img
+												img(src="img/avt.png", alt="")
+											figcaption
+												h4.review-author Chủ nhà 1
+												.review-content.content
+													p “Tôi rất hài lòng về ngôi nhà của mình sau khi được nâng cấp, cám ơn đội thi công của Vĩnh Tường nhé.”
+												.rating
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+									.review
+										figure
+											.author-img
+												img(src="img/avt.png", alt="")
+											figcaption
+												h4.review-author Chủ nhà 1
+												.review-content.content
+													p “Tôi rất hài lòng về ngôi nhà của mình sau khi được nâng cấp, cám ơn đội thi công của Vĩnh Tường nhé.”
+												.rating
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+													i.fa.fa-star.active
+													i.fa.fa-star
+
+
+							#tab3.tab-pane.fade(role='tabpanel')
+								.project-price
+									.project-group
+										h4.project-name Trần thạch cao
+										table.price-table
+											tr
+												td Hạng mục công trình
+												td 
+													strong Nhà xưởng - Phòng làm việc - Cao cấp - Trần thạch cao
+											tr
+												td Gói giải pháp
+												td
+													.project-info
+														figure
+															.project-img
+																img(src="img/project/p1.jpg", alt="")
+															figcaption
+																.project-solution
+																	a(href="#!") Khung xương Vĩnh Tường TopLinePlus Tấm trần nổi Chống ẩm GypDecor Aqua
+															<i class="material-icons">help_outline</i>
+											tr
+												td Giá / m²
+												td
+													strong 180.000 VND
+											tr
+												td Ghi chú của thợ
+												td
+													strong Đảm bảo tiến độ thi công đến 1/6
+									.project-group
+										h4.project-name Trần thạch cao
+										table.price-table
+											tr
+												td Hạng mục công trình
+												td 
+													strong Nhà xưởng - Phòng làm việc - Cao cấp - Trần thạch cao
+											tr
+												td Gói giải pháp
+												td
+													.project-info
+														figure
+															.project-img
+																img(src="img/project/p1.jpg", alt="")
+															figcaption
+																.project-solution
+																	a(href="#!") Khung xương Vĩnh Tường TopLinePlus Tấm trần nổi Chống ẩm GypDecor Aqua
+															<i class="material-icons">help_outline</i>
+											tr
+												td Giá / m²
+												td
+													strong 180.000 VND
+											tr
+												td Ghi chú của thợ
+												td
+													strong Đảm bảo tiến độ thi công đến 1/6
+					.btn-wrap.justify-content-between
+						a.btn-workerlist(href="#!") 
+							span Danh sách thợ thi công đã gửi báo giá
+						a.btn-selectworker(href="#!") Chọn thợ đến khảo sát
+					.select-des (Bạn có thể chọn nhiều hơn 1 thợ)
+
+
+// Modal
+//- #cancel-requirement.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog.modal-cancel(role='document')
+		.modal-content
+			.modal-header
+				h5.modal-title Hủy yêu cầu
+				.close(data-dismiss='modal', aria-label='Close')
+					i.material-icons close
+			.modal-body
+				.cancel-requirement
+					.form-wrap
+						.form-group
+							label Bạn vui lòng chia sẻ lý do hủy yêu cầu:
+							ul
+								li
+									.radio
+										input#radio1(type="radio", name="radio" checked)
+										label(for="radio1") Thông tin yêu cầu sai
+								li
+									.radio
+										input#radio2(type="radio", name="radio")
+										label(for="radio2") Tôi đã tìm được thợ
+								li
+									.radio
+										input#radio3(type="radio", name="radio")
+										label(for="radio3") Không còn yêu cầu nữa
+								li
+									.radio
+										input#radio4(type="radio", name="radio")
+										label(for="radio4") Công trình bị chậm tiến độ
+								li
+									.radio
+										input#radio5(type="radio", name="radio")
+										label(for="radio5") Lý do khác
+									input.form-control(type="text" placeholder="Vui lòng nêu lý do...")
+						.frm-btn
+							label Bạn có chắc chắn hủy yêu cầu?
+							input(type="submit", value="Xác nhận hủy yêu cầu")

@@ -1,0 +1,128 @@
+.breadcrumb-wrap
+	.breadcrumb-img
+		img(src="img/breadcrumb/1.jpg", alt="")
+.container
+	.row.no-gutters
+		.col-12.col-lg-2
+			nav.sidebar-nav
+				ul
+					li
+						a(href="#!")
+							.icon <i class="material-icons">playlist_add</i>
+							.text Mới
+								span.number (
+									strong 2
+									|)
+					li
+						a(href="#!")
+							.icon <i class="material-icons">phone_in_talk</i>
+							.text Báo giá
+								span.number (
+									strong 0
+									|)
+					li
+						a(href="#!")
+							.icon <i class="material-icons">straighten</i>
+							.text Khảo sát
+								span.number (
+									strong 0
+									|)
+					li.active
+						a(href="#!")
+							.icon <i class="material-icons">done_all</i>
+							.text Hoàn thành
+								span.number (
+									strong 0
+									|)
+			//- .post-hotline
+				a(href="tel:1800 1218") <i class="material-icons">phone</i> 1800 1218
+		.col-12.col-lg-10
+			.requirement-page
+				.requirement-list
+					.requirement-group
+						.requirement-info
+							h2.requirement-name Nhà xưởng - Phòng làm việc - Cao cấp - Trần thạch cao
+							ul
+								li Đăng lúc: 
+									time 10:20 10/05/2017
+								li 45 Trương Đình Hội, Phường 16, Quận 8, HCM
+						.btn-wrap 
+							a.btn-cancel(href="#!" data-toggle='modal', data-target='#cancel-requirement') <i class="material-icons">delete</i> Hủy bỏ
+				.worker-list.selected
+					h3.worker-amount.font-weight-bold.text-success Đã hoàn thành
+					.worker
+						.worker-info
+							figure
+								.worker-img
+									img(src="img/worker/1.png", alt="")
+									//- <i class="material-icons check">check_circle</i>
+								figcaption
+									.worker-name Đội thi công Vĩnh Tường 01
+									ul
+										li Thi công 78 công trình
+											.rating
+												<i class="fa fa-star active" aria-hidden="true"></i>
+												<i class="fa fa-star active" aria-hidden="true"></i>
+												<i class="fa fa-star active" aria-hidden="true"></i>
+												<i class="fa fa-star active" aria-hidden="true"></i>
+												<i class="fa fa-star" aria-hidden="true"></i>
+										li Dự toán: 
+											strong 110,000 VND / m²
+										li Nhận lúc: 
+											time 10:50 10/05/2017
+						.btn-wrap
+							a.btn-viewpolicy(href="#!") Xem thỏa thuận
+							a.btn-call(href="tel:0123 456 789") <i class="material-icons">phone</i>0123 456 789
+					.btn-reviewwrap
+						a.review-notice(href="#!" data-toggle='modal', data-target='#review-popup') Vui lòng giúp chúng tôi cải thiện bằng đánh giá của bạn
+
+// Modal
+#review-popup.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+	.modal-dialog.modal-review(role='document')
+		.modal-content
+			.modal-header
+				h5.modal-title Hủy yêu cầu
+				.close(data-dismiss='modal', aria-label='Close')
+					i.material-icons close
+			.modal-body.review-popup
+				.worker
+					figure
+						.worker-img
+							img(src="img/worker/1.png", alt="")
+						figcaption
+							.worker-name Đội thi công Vĩnh Tường 01
+				.rating-star
+					select#rating
+						option(value='1') 1
+						option(value='2') 2
+						option(value='3') 3
+						option(value='4') 4
+						option(value='5' selected) 5
+				.form-wrap
+					.rating-form1
+						.form-group
+							.module-title Bạn Chưa hài lòng về điều gì
+							ul
+								li
+									.radio
+										input#radio1(type="radio", name="radio" checked)
+										label(for="radio1") Thời gian thi công quá lâu
+								li
+									.radio
+										input#radio2(type="radio", name="radio")
+										label(for="radio2") Giá tiền cao hơn dự đoán
+								li
+									.radio
+										input#radio3(type="radio", name="radio")
+										label(for="radio3") Thái độ thi công chưa tốt
+								li
+									.radio
+										input#radio5(type="radio", name="radio")
+										label(for="radio5") Lý do khác
+									input.form-control(type="text" placeholder="Vui lòng nêu lý do...")
+					.rating-form2
+						.form-group
+							input.form-control(type="text" placeholder="Nhận xét của bạn...")
+					.frm-btn
+						//- label Bạn có chắc chắn hủy yêu cầu?
+						input(type="submit", value="Gửi đánh giá")
